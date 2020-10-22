@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plist version="1.0">
+    <dict>
+        <!-- array of downloads. -->
+        <key>items</key>
+        <array>
+            <dict>
+                <!-- an array of assets to download -->
+                <key>assets</key>
+                <array>
+                    <!-- software-package: the ipa to install. -->
+                    <dict>
+                        <!-- required. the asset kind. -->
+                        <key>kind</key>
+                        <string>software-package</string>
+                        <!-- required. the URL of the file to download. -->
+                        <key>url</key>
+                        <string>https://mobile-tramontina.github.io/dim000_ios.ipa</string>
+                    </dict>
+                    <!-- display-image: the icon to display during download .-->
+                    <dict>
+                        <key>kind</key>
+                        <string>display-image</string>
+                        <!-- optional. indicates if icon needs shine effect applied. -->
+                        <key>needs-shine</key>
+                        <true/>
+                        <key>url</key>
+                        <string>https://mobile-tramontina.github.io/app_logo_ios_58.png</string>
+                    </dict>
+                    <!-- full-size-image: the large 512x512 icon used by iTunes. -->
+                    <dict>
+                        <key>kind</key>
+                        <string>full-size-image</string>
+                        <key>needs-shine</key>
+                        <true/>
+                        <key>url</key>
+                        <string>https://mobile-tramontina.github.io/icon_1024x1024.png</string>
+                    </dict>
+                </array>
+                <key>metadata</key>
+                <dict>
+                    <!-- required -->
+                    <key>bundle-identifier</key>
+                    <string>net.tramontina.dim000</string>
+                    <!-- optional (software only) -->
+                    <key>bundle-version</key>
+                    <string>1.09</string>
+                    <!-- required. the download kind. -->
+                    <key>kind</key>
+                    <string>software</string>
+                    <!-- optional. displayed during download; typically company name -->
+                    <key>subtitle</key>
+                    <string>Genero Mobile</string>
+                    <!-- required. the title to display during the download. -->
+                    <key>title</key>
+                    <string>Mobile</string>
+                </dict>
+            </dict>
+        </array>
+    </dict>
+</plist>
+
