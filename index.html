@@ -6,23 +6,6 @@
 	<meta name="description" content="Tramontina Mobile">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<script>
-		window.onload = function()
-		{
-			if (navigator.userAgent.match(/(iPad|iPhone|iPod)/i)) 
-			{
-				document.getElementById("botao-ios").classList.add("exibe");
-			} else if (navigator.userAgent.match(/android/i))  {
-				document.getElementById("botao-android").classList.add("exibe");
-			} else
-			{
-				document.getElementById("botao-android").classList.add("exibe");
-				document.getElementById("botao-ios").classList.add("exibe");
-				document.getElementById("mensagem-mobile").classList.add("exibe");
-			}
-		}
-	</script>
-
 	<style type="text/css">
 
 		body {
@@ -97,7 +80,6 @@
 			
 	</style>
 
-
 </head>
 
 <body>
@@ -106,26 +88,9 @@
 			<img id="im_logo" src="img/tramontina_mobile.png" alt="Tramontina Mobile"/>
 		</div>
 
-
 		<h1>Acesse os aplicativos da Tramontina<br/>em seu smartphone.</h1>
 		
 		<h2>Aplicativo exclusivo para funcionários da Tramontina.<br/>A liberação do acesso é feita pelo operador de cada unidade.</h2>
-
-		<div id="mensagem-mobile" class="oculta">
-			Aplicativo disponível para Android, iPhone e iPad.<br/>Selecione o download correspondente ao seu sistema.
-		</div>
-
-		<div>
-			<a id="botao-android" class="oculta botao-download" href="https://www.tramontina.net/mobile/dim000_android.apk">
-				<img src="img/ico_android.svg"/>
-				<span>Download</span>
-			</a>
-	
-			<a id="botao-ios" class="oculta  botao-download" href="itms-services://?action=download-manifest&amp;url=https%3a%2f%2fmobile-tramontina.github.io%2fdim000_ios.plist">
-				<img src="img/ico_ios.svg"/>
-				<span>Download</span>
-			</a>
-		</div>
 
 	</div>
 
